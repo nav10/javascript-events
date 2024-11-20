@@ -1,0 +1,76 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #BB86FC;
+    margin-bottom: 20px;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1E1E1E;
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #BB86FC;
+    border-radius: 5px;
+    background-color: #BB86FC;
+    color: #121212;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #3700B3;
+    color: #E0E0E0;
+}
+
+/* Input styling */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #BB86FC;
+}
+
+/* Message styling */
+p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #A0A0A0;
+}
+
+/* Container for Event Delegation */
+#buttonContainer {
+    display: flex;
+    gap: 10px;
+}
+
+#buttonContainer button {
+    flex: 1;
+}
