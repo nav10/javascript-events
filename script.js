@@ -11,3 +11,12 @@ hoverButton.addEventListener('mouseover', () => {
 hoverButton.addEventListener('mouseout', () => {
     hoverMessage.textContent = "Mouse over or out to change this text.";
 });
+
+//keyboard events that capture the last key pressed in a text input
+const keyInput = document.getElementById('keyInput');
+const keyMessage = document.getElementById('keyMessage');
+
+//displays the last key pressed
+keyInput.addEventListener('keydown', (event) => {
+    keyMessage.textContent = `You pressed: ${event.key}`;
+});
