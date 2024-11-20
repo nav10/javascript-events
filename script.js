@@ -31,3 +31,17 @@ demoForm.addEventListener('submit', (event) => {
     event.preventDefault(); 
     formMessage.textContent = "Form submitted successfully!";
 });
+
+//focus events to update a message when the input field gains or loses focus
+const focusInput = document.getElementById('focusInput');
+const focusMessage = document.getElementById('focusMessage');
+
+//when the input gains focus
+focusInput.addEventListener('focus', () => {
+    focusMessage.textContent = "Input is focused!";
+});
+
+//when the input loses focus
+focusInput.addEventListener('blur', () => {
+    focusMessage.textContent = "Input lost focus!";
+});
