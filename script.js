@@ -20,3 +20,14 @@ const keyMessage = document.getElementById('keyMessage');
 keyInput.addEventListener('keydown', (event) => {
     keyMessage.textContent = `You pressed: ${event.key}`;
 });
+
+//form events to handle form submission
+const demoForm = document.getElementById('demoForm');
+const formMessage = document.getElementById('formMessage');
+
+//prevents default form submission and display a message
+demoForm.addEventListener('submit', (event) => {
+    //stop the form from reloading the page
+    event.preventDefault(); 
+    formMessage.textContent = "Form submitted successfully!";
+});
