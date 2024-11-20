@@ -45,3 +45,15 @@ focusInput.addEventListener('focus', () => {
 focusInput.addEventListener('blur', () => {
     focusMessage.textContent = "Input lost focus!";
 });
+
+//event delegation to handle clicks on buttons inside a container
+const buttonContainer = document.getElementById('buttonContainer');
+const delegationMessage = document.getElementById('delegationMessage');
+
+//using event delegation to identify which button was clicked
+buttonContainer.addEventListener('click', (event) => {
+    //check if the clicked element is a button
+    if (event.target.tagName === 'BUTTON') { 
+        delegationMessage.textContent = `You clicked: ${event.target.textContent}`;
+    }
+});
